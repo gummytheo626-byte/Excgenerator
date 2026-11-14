@@ -1,0 +1,79 @@
+body{
+    font-family: Arial;
+    max-width: 800px;
+    padding: 20px;
+    background: whitesmoke;
+    color: #333;
+    line-height: 20px;
+}
+
+#NavBar a{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+#NavBar a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.2s ease;
+}
+
+#NavBar a:hover::after{
+    width: 100%;
+}
+
+#gnrButton{
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px grey;
+    transition: all 0.2s ease;
+}
+
+#gnrButton:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+}
+#gnrButton:active{
+    background-color: black;
+    color: white;
+    transform: translateY(2px);
+}
+
+#classInput{
+    margin-bottom: 20px;
+}
+
+.divider{
+    background-color: grey;
+    color: white;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 0px;
+    margin: 10px 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: grey;
+    color: white;
+    text-align: left;
+    width: 100%;
+}
