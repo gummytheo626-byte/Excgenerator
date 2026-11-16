@@ -38,3 +38,20 @@ function generateExcuse() {
     outputPara.textContent = excuse;
 }
 }
+
+function copyExcuse() {
+    let outputPara = document.getElementById("exPara");
+    let copyBtn = document.getElementById("copyButton");
+
+    if(outputPara.textContent.startsWith("Error") || outputPara.textContent === "[EXCUSE GENERATED HERE]"){
+        alert("GENERATE AN EXCUSE FIRST!");
+        return;
+    }
+
+    navigator.clipboard.writeText(outputPara.textContent);
+
+    copyBtn.innerHTML = '<span class="material-symbols-outlined">check</span> Copied!';    
+    setTimeout(() => {
+        copyBtn.innerHTML = '<span class="material-symbols-outlined">content_copy</span> Copied!';
+    }, 2000)
+}

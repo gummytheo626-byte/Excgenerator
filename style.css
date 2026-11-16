@@ -45,17 +45,37 @@ body{
 }
 
 #gnrButton:hover{
-    background-color: darkgrey;
+    background-color: #3488DB;
     cursor: pointer;
 }
 #gnrButton:active{
-    background-color: black;
+    background-color: #3468DB;
     color: white;
     transform: translateY(2px);
 }
 
 #classInput{
     margin-bottom: 20px;
+}
+
+#copyButton{
+    background: whitesmoke;
+    outline: none;
+    border: 1px black solid;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+#copyButton:hover{
+    background: darkgray;
+    cursor: pointer;
+}
+
+#copyButton:active{
+    background-color: black;
+    .material-symbols-outlined{
+        color: white;
+    }
 }
 
 .divider{
