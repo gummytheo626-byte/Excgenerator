@@ -12,12 +12,16 @@
         <a href="releases.html">Versions</a>
     </nav>
     <hr>
+    <select id="SelectorScene">
+        <option id="Homework" value="Homework">Homework</option>
+        <option id="LateHome" value="LateHome">Late for School</option>
+    </select>
 
     <H1>EXCUSE GENERATOR!</H1>
-    <h3>Work (Homework, Essay etc):</h3>
+    <h3 id="iHead1">Work (Homework, Essay etc):</h3>
     <input type="text" id="workInput">
     <br>
-    <h3>Class (English, Maths etc):</h3>
+    <h3 id="iHead2">Class (English, Maths etc):</h3>
     <input type="text" id="classInput">
     <br>
     <button id="gnrButton" onclick="generateExcuse()">GENERATE!</button>
@@ -26,9 +30,10 @@
     <button id="copyButton" onclick="copyExcuse()">
         <span class="material-symbols-outlined">content_copy</span>Copy
     </button>
+    <a id="suggestButton" href="https://docs.google.com/forms/d/e/1FAIpQLSc8Fa8biMIP_lfb5l1azGUkPbjHOrWgGfpQEHvcBTo1kwFXmg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" title="Form for suggestions, New excuses and word ideas!">Suggest an idea</a>
 
     <footer>
-        <p>Version <span id="version">1.0.0</span></p>
+        <p>Version <span id="version">0</span></p>
         <div class="marquee-container" style="background-color: yellow; color: black; font-weight: bold;">
         THIS WEBSITE DOES NOT ENCOURAGE THE 
         USE OF THIS IN MALICIOUS INTENTS, 
